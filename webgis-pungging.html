@@ -740,13 +740,13 @@
 
         // Load avatars
         const avatarImages = {
-            0: './Foto/Pak Adka Dosen.jpg',
-            1: './Foto/Eki.jpeg',
-            2: './Foto/Thoriq.jpeg',
-            3: './Foto/Zipar.jpeg',
-            4: './Foto/Indra.jpeg',
-            5: './Foto/Aspradita.jpeg',
-            6: './Foto/Danang.jpeg'
+            0: './Pak Adka Dosen.jpg',
+            1: './Eki.jpeg',
+            2: './Thoriq.jpeg',
+            3: './Zipar.jpeg',
+            4: './Indra.jpeg',
+            5: './Aspradita.jpeg',
+            6: './Danang.jpeg'
         };
 
         window.addEventListener('DOMContentLoaded', () => {
@@ -795,7 +795,7 @@
             // Bangunan Layer
             map.addLayer(new ol.layer.Vector({
                 source: new ol.source.Vector({ 
-                    url: './Data/Bangunan.geojson', 
+                    url: './Bangunan.geojson', 
                     format: new ol.format.GeoJSON() 
                 }),
                 title: 'Bangunan', 
@@ -805,7 +805,7 @@
             // Area Terbuka Layer
             map.addLayer(new ol.layer.Vector({
                 source: new ol.source.Vector({ 
-                    url: './Data/Area_Terbuka.geojson', 
+                    url: './Area_Terbuka.geojson', 
                     format: new ol.format.GeoJSON() 
                 }),
                 title: 'Area Terbuka', 
@@ -814,7 +814,7 @@
 
             // Toponimi Layer
             var sourceToponimi = new ol.source.Vector({
-                url: './Data/Toponimi.geojson',
+                url: './Toponimi.geojson',
                 format: new ol.format.GeoJSON()
             });
 
